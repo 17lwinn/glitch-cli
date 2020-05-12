@@ -1,4 +1,4 @@
-#! /usr/bin/env python3
+#! /usr/bin/env bash
 
 import cmd
 import os

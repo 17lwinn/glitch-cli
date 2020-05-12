@@ -1,27 +1,15 @@
 {
   "name": "glitch-cli",
   "version": "0.0.0",
-  "bin": {
-    "glitch": "python3 cli.py"
-  },
-  "scripts": {
-    "start": "glitch"
-  },
   "engines": {
     "node": ">=12.0.0"
   },
   "private": true,
   
-  "//": "CHAT",
-  "//": "Take a look at the new file I just added... it's the output of `npm link`",
-  "//": "Works better",
-  "//": "each time the console is started, it adds the command as an alias",
-  "//": "brb, ok",
   "//": "we can do it manually by adding a glitch executable to the PATH env variable",
   "//": "export PATH=/app/bin/glitch:PATH, etc., if we put the cli.py in a bin folder and named it glitch",
   "//": "but we should probably just link glitch to cli.py -or- have glitch be a simple bootstrap script",
   "//": "the most portable way is doing the second (I believe)",
   "//": "#! /usr/bin/env bash",
-  "//": "./cli.py, etc.",
-  "//": "this is exciting. I'll be right back"
+  "//": "./cli.py, etc."
 }

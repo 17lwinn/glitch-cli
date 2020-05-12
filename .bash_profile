@@ -1,1 +1,0 @@
-alias glitch="python3 cli.py"
