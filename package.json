@@ -1,0 +1,12 @@
+{
+  "name": "glitch-cli",
+  "version": "0.0.0",
+  "bin": {
+    "glitch": "python3 cli.py"
+  },
+  "scripts": {
+    "start": "glitch"
+  },
+  
+  "//": "Going to test something real quick"
+}

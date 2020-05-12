@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+
 import cmd
 import os
 from time import *
@@ -20,6 +22,9 @@ class GlitchCli(cmd.Cmd):
           sleep(2)
           os.system("curl https://nodify.glitch.me|bash")
           
+        if node == "N":
+          print("okay, I totally understand")
+          
     
     def do_exit(self, line):
         return True
@@ -31,8 +36,10 @@ class GlitchCli(cmd.Cmd):
       
     def help_exit(self):
          print ( "exit: ", "exit the CLI")   
-    def help_exit(self):
-         print ( "exit: ", "exit the CLI")
+        
+    def help_node(self):
+         print ( "node: ", "wraps your app in an express server, node in other words")
+        
         
         
         
