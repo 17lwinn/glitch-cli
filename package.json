@@ -7,6 +7,16 @@
   "scripts": {
     "start": "glitch"
   },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "private": true,
   
-  "//": "Going to test something real quick"
+  "//": "CHAT",
+  "//": "Take a look at the new file I just added... it's the output of `npm link`",
+  "//": "Works better",
+  "//": "each time the console is started, it adds the command as an alias",
+  "//": "brb, ok",
+  "//": "we can do it manually by adding a glitch executable to the PATH env variable",
+  "//": "export PATH="
 }
