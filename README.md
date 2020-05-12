@@ -1,37 +1,41 @@
-Welcome to Glitch
-=================
+# glitch-cli
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+the handy CLI to manage and change or even optimise your glitch project!
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
+----------
 
-Find out more [about Glitch](https://glitch.com/about).
+# what will it do?
 
+it will:
 
-Your Project
-------------
+- allow you to convert your project into one with nodejs support
+- force stop your webserver
+- clear your project completely, quite dangerous i think
+- allow you to get help on simple topics!
+- show your status
 
-### ← README.md
+and much more!
 
-That's this file, where you can tell people what your cool website does and how you built it.
+it won't:
 
-### ← index.html
+- give you sudo
+- hack MI6
+- delete everything or
+- make you a nice dinner
 
-Where you'll write the content of your website. 
+-----------
 
-### ← style.css
+# where is everything?!
 
-CSS files add styling rules to your content.
+not much yet, we only started today. But changes will be released ASAP
 
-### ← script.js
+--------
+# can I help?
 
-If you're feeling fancy you can add interactivity to your site with JavaScript.
+sure! get the code on glitch or send a pull request (or both)
 
-### ← assets
+-----------
 
-Drag in `assets`, like images or music, to add them to your project
+# is this official?
 
-Made by [Glitch](https://glitch.com/)
--------------------
-
-\ ゜o゜)ノ
+no, glitch isn't involved in anyway so its enitrely 3rd party work
