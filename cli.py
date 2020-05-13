@@ -1,4 +1,4 @@
-#! /usr/bin/env bash
+#! /usr/bin/env python3
 
 import cmd
 import zipfile
@@ -11,10 +11,10 @@ class GlitchCli(cmd.Cmd):
     prompt = "GlitchCLI: "
     
     def do_greet(self, line):
-        print ("hello user, hope you have a good day using our service")
+        print ("Hello, we hope you have a good day using our service")
     
     def do_node(self, line):
-        print("are you sure you want to make your project a node app? Y or N")
+        print("Are you sure you want to make your project a node app? Y or N")
         node = input("choice: ")
         
         if node == "Y":
