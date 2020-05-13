@@ -51,6 +51,11 @@ class GlitchCli(cmd.Cmd):
         print("remove command to remove all added URLs")
         print("any errors? make sure you pull from the repo first!")
       
+      if git == "2":
+        gist = input("gist URL: ")
+        print("pushing... you will be queried for your credentials by git")
+        os.system("git remote add origin" + gist)
+      
     def do_remove(self, line):
       print("removing all connected branches...")
       os.system("git remote remove origin")
