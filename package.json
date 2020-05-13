@@ -8,7 +8,6 @@
     "start": ""
   },
   "private": true,
-  
   "//": "we can do it manually by adding a glitch executable to the PATH env variable",
   "//": "export PATH=/app/bin/glitch:PATH, etc., if we put the cli.py in a bin folder and named it glitch",
   "//": "but we should probably just link glitch to cli.py -or- have glitch be a simple bootstrap script",
