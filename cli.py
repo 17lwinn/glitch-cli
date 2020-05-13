@@ -1,6 +1,7 @@
 #! /usr/bin/env bash
 
 import cmd
+from zipfile import ZipFile
 import os
 from time import *
 
@@ -25,7 +26,12 @@ class GlitchCli(cmd.Cmd):
         if node == "N":
           print("okay, I totally understand")
           
-    
+    def do_pack(self, line):
+      zip_name = input("ZIP name (don't add .zip): ")
+      print("packing your very nice parcel...")
+      
+      sleep(2)
+      
     def do_exit(self, line):
         return True
 # -----------------------------------------------------------------------
