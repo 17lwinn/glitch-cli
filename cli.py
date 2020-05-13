@@ -29,7 +29,7 @@ class GlitchCli(cmd.Cmd):
     def do_pack(self, line):
       print("packing your very nice parcel...")
       zip_file = zipfile.ZipFile('app.zip', 'w')
-      zip_file.write("*", compress_type=zipfile.ZIP_DEFLATED)
+      zip_file.write('/app', compress_type=zipfile.ZIP_DEFLATED)
       zip_file.close()
       sleep(2)
       
@@ -47,7 +47,8 @@ class GlitchCli(cmd.Cmd):
     def help_node(self):
          print ( "node: ", "wraps your app in an express server, node in other words")
         
-        
+    def help_pack(self):
+      print( "pack: ", "pack the entire project into a zip file called app.zip")
         
         
 if __name__ == ("__main__"):
