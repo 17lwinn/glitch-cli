@@ -45,8 +45,16 @@ class GlitchCli(cmd.Cmd):
         os.system("git remote add origin " + github)
         os.system("git push -u origin master")
         sleep(2)
-        print("good news! your changes have been commited!")
-        print("if you want to push to a gist, run the ")
+        print("--------------------------------------------")
+        print("good news! your changes should have been commited!")
+        print("if you want to push to a gist, run the")
+        print("remove command to remove all added URLs")
+        print("any errors? make sure you pull from the repo first!")
+      
+    def do_remove(self, line):
+      print("removing all connected branches...")
+      os.system("git remote remove origin")
+      print("origin branch removed")
       
       
     def do_exit(self, line):
@@ -66,6 +74,11 @@ class GlitchCli(cmd.Cmd):
     def help_pack(self):
       print( "pack: ", "pack the entire project into a zip file called app.zip")
         
+    def help_push(self):
+      print(" push: ", "push changes to github or github gists")
         
+    def help_remove(self):
+      print(" remove: ", "remove all remote origin branches")
+      
 if __name__ == ("__main__"):
     GlitchCli().cmdloop()
