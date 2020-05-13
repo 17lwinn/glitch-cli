@@ -78,7 +78,7 @@ class GlitchCli(cmd.Cmd):
          print ( "exit: ", "exit the CLI")   
         
     def help_node(self):
-         print ( "node: ", "wraps your app in an express server, node in other words")
+      print ( "node: ", "wraps your app in an express server, node in other words")
         
     def help_pack(self):
       print( "pack: ", "pack the entire project into a zip file called app.zip")
