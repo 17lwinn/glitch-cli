@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
 import cmd
-from zipfile
+import zipfile
 import os
 from time import *
 
@@ -27,9 +27,10 @@ class GlitchCli(cmd.Cmd):
           print("okay, I totally understand")
           
     def do_pack(self, line):
-      zip_name = input("ZIP name (don't add .zip): ")
       print("packing your very nice parcel...")
-      
+      zip_file = zipfile.ZipFile('app.zip', 'w')
+      zip_file.write("*", compress_type=zipfile.ZIP_DEFLATED)
+      zip_file.close()
       sleep(2)
       
     def do_exit(self, line):
