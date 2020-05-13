@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
 import cmd
-from zipfile import ZipFile
+from zipfile
 import os
 from time import *
 
