@@ -37,6 +37,7 @@ class GlitchCli(cmd.Cmd):
       print("where would you like to push your code to? 1 or 2")
       print("1. github")
       print("2. github gists")
+      print("3. exit")
       git = input("push my code to: ")
       
       if git == "1":
@@ -53,8 +54,12 @@ class GlitchCli(cmd.Cmd):
       if git == "2":
         gist = input("gist URL: ")
         print("pushing... you will be queried for your credentials by git")
-        os.system("git remote add origin" + gist)
+        os.system("git remote add origin " + gist)
+        os.system("git push -u origin master" + " --force")
       
+      if git == "3":
+        os.system("glitch")
+        
     def do_remove(self, line):
       print("removing all connected branches...")
       os.system("git remote remove origin")
