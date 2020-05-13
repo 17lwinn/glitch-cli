@@ -43,13 +43,12 @@ class GlitchCli(cmd.Cmd):
         github = input("repo URL: ")
         print("pushing... you will be queried for your credentials by git")
         os.system("git remote add origin " + github)
-        os.system("git push -u origin master")
+        os.system("git push -u origin master" + " --force")
         sleep(2)
         print("--------------------------------------------")
         print("good news! your changes should have been commited!")
         print("if you want to push to a gist, run the")
         print("remove command to remove all added URLs")
-        print("any errors? make sure you pull from the repo first!")
       
       if git == "2":
         gist = input("gist URL: ")
