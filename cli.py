@@ -73,7 +73,15 @@ class GlitchCli(cmd.Cmd):
       enveditvalue = input("value name: ")
       env.write(enveditvar + " = " + enveditvalue)
   
-    def do_prettier(self, line)
+    def do_prettier(self, line):
+      prettier = open(".prettierrc", "a")
+      print("1. basic configuration")
+      prettierconfig = input("")
+      
+      if prettierconfig == "1":
+        print("setting up basic configuration...")
+        sleep(2)
+        os.system("")
     def do_exit(self, line):
         return True
 # -----------------------------------------------------------------------
