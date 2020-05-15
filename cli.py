@@ -66,6 +66,11 @@ class GlitchCli(cmd.Cmd):
       os.system("git remote remove origin")
       print("origin branch removed")
       
+    def do_env(self,line):
+      env = open(".env", "a")
+      enveditvar = input("variable name: ")
+      enveditvalue = input("value name: ")
+      env.write(enveditvar + " = " + enveditvalue)
       
     def do_exit(self, line):
         return True
