@@ -81,7 +81,8 @@ class GlitchCli(cmd.Cmd):
       if prettierconfig == "1":
         print("setting up basic configuration...")
         sleep(2)
-        os.system("")
+        os.system("wget https://raw.githubusercontent.com/styleguidist/example/master/.prettierrc")
+        
     def do_exit(self, line):
         return True
 # -----------------------------------------------------------------------
