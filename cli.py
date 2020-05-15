@@ -57,6 +57,7 @@ class GlitchCli(cmd.Cmd):
         os.system("git remote add origin " + gist)
         os.system("git push -u origin master" + " --force")
       
+      
       if git == "3":
         os.system("glitch")
         
