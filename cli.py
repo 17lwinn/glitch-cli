@@ -3,6 +3,7 @@
 import cmd
 import zipfile
 import os
+import urllib.request
 from time import *
 
 
@@ -71,7 +72,8 @@ class GlitchCli(cmd.Cmd):
       enveditvar = input("variable name: ")
       enveditvalue = input("value name: ")
       env.write(enveditvar + " = " + enveditvalue)
-      
+  
+    def do_prettier(self, line)
     def do_exit(self, line):
         return True
 # -----------------------------------------------------------------------
@@ -94,6 +96,9 @@ class GlitchCli(cmd.Cmd):
         
     def help_remove(self):
       print(" remove: ", "remove all remote origin branches")
+      
+    def help_env(self):
+      print(" env: ", "write to the .env file (double quotes not added)")
       
 if __name__ == ("__main__"):
     GlitchCli().cmdloop()
